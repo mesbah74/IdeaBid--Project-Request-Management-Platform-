@@ -21,7 +21,8 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadUserTypeChart(); // তোমার chart function টা এখানে কল করো
+            LoadUserTypeChart();
+            LoadProjectStatusChart();// তোমার chart function টা এখানে কল করো
         }
 
 
@@ -68,6 +69,50 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
             catch (Exception ex)
             {
                 MessageBox.Show("Error loading chart: " + ex.Message, "Chart Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
+        private void LoadProjectStatusChart()
+        {
+            try
+            {
+                string query = @"
+                    SELECT ps.StatusName, COUNT(pr.RequestID) AS TotalProjects
+                    FROM ProjectStatus ps
+                    LEFT JOIN ProjectRequest pr ON ps.StatusID = pr.StatusID
+                    GROUP BY ps.StatusName
+                    ORDER BY ps.StatusName
+                ";
+
+
+                DataTable dt = DataBase.GetDataTable(query);
+
+                chart2.Series.Clear();
+                chart2.Titles.Clear();
+
+                Series series = new Series("Project Status");
+                series.ChartType = SeriesChartType.Pie;  // Pie chart
+                series.IsValueShownAsLabel = true;
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    string status = row["StatusName"].ToString();
+                    int count = Convert.ToInt32(row["TotalProjects"]);
+                    series.Points.AddXY(status, count);
+                }
+
+                chart2.Series.Add(series);
+                chart2.Titles.Add("Projects by Status");
+
+                // Optional: Legend
+                chart2.Legends[0].Docking = Docking.Right;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading ProjectStatus chart: " + ex.Message, "Chart Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
