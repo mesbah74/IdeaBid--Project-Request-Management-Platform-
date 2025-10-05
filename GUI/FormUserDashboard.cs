@@ -114,13 +114,7 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
         }
 
-        private void ButtonProfile_Click(object sender, EventArgs e)
-        {
-           //userControlUserProfile1.BringToFront();
-           // userControlUserProfile1.LoadUserInfo(CurrentUserId);
-           // userControlUserProfile1.LoadUserInfo(CurrentUserId);
-        }
-
+    
 
 
 
@@ -150,7 +144,18 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
-
+         
         }
+
+        private void ButtonProfile_Click(object sender, EventArgs e)
+        {
+            userControlUserProfile1.BringToFront();
+            userControlUserProfile1.LoadUserInfo(CurrentUserId);
+            userControlUserProfile1.LoadUserInfo(CurrentUserId);
+        }
+
+ //       userControlUserProfile1.bringtofront();
+ //userControlUserProfile1.loaduserinfo(currentuserid);
+ //userControlUserProfile1.loaduserinfo(currentuserid);
     }
 }
