@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -121,6 +122,12 @@
     </Compile>
     <Compile Include="GUI\UserControl.Designer.cs">
       <DependentUpon>UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlDashBoard.Designer.cs">
+      <DependentUpon>UserControlDashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UserControlDashboardControlPanel.cs">
       <SubType>UserControl</SubType>
@@ -210,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControl.resx">
       <DependentUpon>UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlDashBoard.resx">
+      <DependentUpon>UserControlDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlDashboardControlPanel.resx">
       <DependentUpon>UserControlDashboardControlPanel.cs</DependentUpon>

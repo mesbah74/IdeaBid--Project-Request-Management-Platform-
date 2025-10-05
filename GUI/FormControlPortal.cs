@@ -68,10 +68,7 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
             DashboardControlPanel1.BringToFront();
         }
 
-        private void buttonDashboardControlPortal_Click(object sender, EventArgs e)
-        {
-            DashboardControlPanel1.BringToFront();
-        }
+  
 
 
         //Logout Button Method
@@ -138,6 +135,11 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
         {
             userControlOurResponses.LoadOurResponses();
             userControlOurResponses.BringToFront();
+        }
+
+        private void buttonDashboardControlPortal_Click(object sender, EventArgs e)
+        {
+           userControlDashBoard1.BringToFront();
         }
     }
 }

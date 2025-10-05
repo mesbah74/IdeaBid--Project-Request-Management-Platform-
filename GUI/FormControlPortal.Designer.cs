@@ -45,11 +45,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelTitleControlPortal = new System.Windows.Forms.Panel();
             this.labelTitleControlPortal = new System.Windows.Forms.Label();
+            this.userControlOurResponses = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlOurResponses();
             this.userControlProjectBoard = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlProjectBoard();
             this.userControlOurProjects = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlOurProjects();
             this.DashboardControlPanel1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlDashboardControlPanel();
             this.UserManageControlPanel1 = new IdeaBid__Project_Request___Management_Platform.UserControlUserManageControlPanel();
-            this.userControlOurResponses = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlOurResponses();
+            this.userControlDashBoard1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlDashBoard();
             this.tableLayoutPanelControlPortal.SuspendLayout();
             this.panelTopLabelControlPortal.SuspendLayout();
             this.panelDisplayControlPortal.SuspendLayout();
@@ -99,6 +100,7 @@
             // 
             this.panelDisplayControlPortal.BackColor = System.Drawing.Color.Transparent;
             this.panelDisplayControlPortal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelDisplayControlPortal.Controls.Add(this.userControlDashBoard1);
             this.panelDisplayControlPortal.Controls.Add(this.userControlOurResponses);
             this.panelDisplayControlPortal.Controls.Add(this.userControlProjectBoard);
             this.panelDisplayControlPortal.Controls.Add(this.userControlOurProjects);
@@ -321,6 +323,14 @@
             this.labelTitleControlPortal.TabIndex = 3;
             this.labelTitleControlPortal.Text = "IdeaBid";
             // 
+            // userControlOurResponses
+            // 
+            this.userControlOurResponses.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlOurResponses.Location = new System.Drawing.Point(0, 0);
+            this.userControlOurResponses.Name = "userControlOurResponses";
+            this.userControlOurResponses.Size = new System.Drawing.Size(1475, 674);
+            this.userControlOurResponses.TabIndex = 4;
+            // 
             // userControlProjectBoard
             // 
             this.userControlProjectBoard.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -356,13 +366,13 @@
             this.UserManageControlPanel1.Size = new System.Drawing.Size(1475, 674);
             this.UserManageControlPanel1.TabIndex = 0;
             // 
-            // userControlOurResponses
+            // userControlDashBoard1
             // 
-            this.userControlOurResponses.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlOurResponses.Location = new System.Drawing.Point(0, 0);
-            this.userControlOurResponses.Name = "userControlOurResponses";
-            this.userControlOurResponses.Size = new System.Drawing.Size(1475, 674);
-            this.userControlOurResponses.TabIndex = 4;
+            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashBoard1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDashBoard1.Name = "userControlDashBoard1";
+            this.userControlDashBoard1.Size = new System.Drawing.Size(1475, 674);
+            this.userControlDashBoard1.TabIndex = 5;
             // 
             // FormControlPortal
             // 
@@ -409,5 +419,6 @@
         private UserControlOurProjects userControlOurProjects;
         private UserControlProjectBoard userControlProjectBoard;
         private UserControlOurResponses userControlOurResponses;
+        private UserControlDashBoard userControlDashBoard1;
     }
 }

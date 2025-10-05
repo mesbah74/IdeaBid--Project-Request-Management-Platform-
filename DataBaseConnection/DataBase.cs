@@ -12,7 +12,7 @@ namespace IdeaBid__Project_Request___Management_Platform.DataBaseConnection
 {
     public static class DataBase
     {
-        private const string ConnectionString = @"Data Source=TAMIM\SQLEXPRESS;Initial Catalog=IdeaBid;Integrated Security=True;TrustServerCertificate=True";
+        private const string ConnectionString = @"Data Source=LAPTOP-GKL05M5P\SQLEXPRESS;Initial Catalog=data;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
         public static object ExecuteScalar(string query, SqlParameter[] parameters = null)
         {
