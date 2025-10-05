@@ -116,8 +116,14 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
         private void ButtonProfile_Click(object sender, EventArgs e)
         {
-           
+           //userControlUserProfile1.BringToFront();
+           // userControlUserProfile1.LoadUserInfo(CurrentUserId);
+           // userControlUserProfile1.LoadUserInfo(CurrentUserId);
         }
+
+
+
+
 
         private void buttonProjectRequest_Click(object sender, EventArgs e)
         {
@@ -135,6 +141,16 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
         private void buttonPublicProjeect_Click(object sender, EventArgs e)
         {
             userControlPublicProjects.BringToFront();
+        }
+
+        private void userControlUserProfile1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDashboard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

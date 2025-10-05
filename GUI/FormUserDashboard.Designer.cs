@@ -46,7 +46,6 @@
             this.panelTitleControlPortal = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.userControlProjectRequestFromUser1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlProjectRequestFromUser();
-            this.userControlDashBoard1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlDashBoard();
             this.panelDisplay.SuspendLayout();
             this.tableLayoutPanelControlPortal.SuspendLayout();
             this.panelTopLabelControlPortal.SuspendLayout();
@@ -57,7 +56,6 @@
             // panelDisplay
             // 
             this.panelDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelDisplay.Controls.Add(this.userControlDashBoard1);
             this.panelDisplay.Controls.Add(this.userControlPublicProjects);
             this.panelDisplay.Controls.Add(this.userControlProjectRequestFormUser);
             this.panelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -256,6 +254,7 @@
             this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDashboard.UseVisualStyleBackColor = false;
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // panel1
             // 
@@ -294,14 +293,6 @@
             this.userControlProjectRequestFromUser1.Name = "userControlProjectRequestFromUser1";
             this.userControlProjectRequestFromUser1.Size = new System.Drawing.Size(1486, 661);
             this.userControlProjectRequestFromUser1.TabIndex = 0;
-            // 
-            // userControlDashBoard1
-            // 
-            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDashBoard1.Location = new System.Drawing.Point(0, 0);
-            this.userControlDashBoard1.Name = "userControlDashBoard1";
-            this.userControlDashBoard1.Size = new System.Drawing.Size(1400, 661);
-            this.userControlDashBoard1.TabIndex = 2;
             // 
             // FormUserDashboard
             // 
@@ -344,6 +335,5 @@
         private UserControlProjectRequestFromUser userControlProjectRequestFromUser1;
         private UserControlProjectRequestFromUser userControlProjectRequestFormUser;
         private UserControlPublicProjects userControlPublicProjects;
-        private UserControlDashBoard userControlDashBoard1;
     }
 }

@@ -69,6 +69,12 @@
     <Compile Include="GUI\FormNewResponed.Designer.cs">
       <DependentUpon>FormNewResponed.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormUserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormUserDashboard.Designer.cs">
+      <DependentUpon>FormUserDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormViewResponse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,12 +116,6 @@
     </Compile>
     <Compile Include="GUI\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\FormUserDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\FormUserDashboard.Designer.cs">
-      <DependentUpon>FormUserDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\UserControl.cs">
       <SubType>UserControl</SubType>
@@ -159,6 +159,12 @@
     <Compile Include="GUI\UserControlPublicProjects.Designer.cs">
       <DependentUpon>UserControlPublicProjects.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UserControlUserDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlUserDashBoard.Designer.cs">
+      <DependentUpon>UserControlUserDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\UserDashboard2.cs">
@@ -191,6 +197,9 @@
     <EmbeddedResource Include="GUI\FormNewResponed.resx">
       <DependentUpon>FormNewResponed.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormUserDashboard.resx">
+      <DependentUpon>FormUserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormViewResponse.resx">
       <DependentUpon>FormViewResponse.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,9 +221,6 @@
     <EmbeddedResource Include="GUI\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormUserDashboard.resx">
-      <DependentUpon>FormUserDashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControl.resx">
       <DependentUpon>UserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlPublicProjects.resx">
       <DependentUpon>UserControlPublicProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlUserDashBoard.resx">
+      <DependentUpon>UserControlUserDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
