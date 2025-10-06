@@ -123,6 +123,12 @@
     <Compile Include="GUI\UserControl.Designer.cs">
       <DependentUpon>UserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UserControlcategory .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlcategory .Designer.cs">
+      <DependentUpon>UserControlcategory .cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UserControlDashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControl.resx">
       <DependentUpon>UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlcategory .resx">
+      <DependentUpon>UserControlcategory .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlDashBoard.resx">
       <DependentUpon>UserControlDashBoard.cs</DependentUpon>

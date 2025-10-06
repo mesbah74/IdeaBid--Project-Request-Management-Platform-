@@ -141,5 +141,11 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
         {
            userControlDashBoard1.BringToFront();
         }
+
+        private void buttoncat_Click(object sender, EventArgs e)
+        {
+            userControlcategory1.BringToFront();
+            userControlcategory1.LoadCategories();
+        }
     }
 }

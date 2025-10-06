@@ -35,6 +35,10 @@
             this.panelDisplayControlPortal = new System.Windows.Forms.Panel();
             this.panelSlidebarControlPortal = new System.Windows.Forms.Panel();
             this.buttonLogoutControlPortal = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelTitleControlPortal = new System.Windows.Forms.Panel();
+            this.labelTitleControlPortal = new System.Windows.Forms.Label();
+            this.buttoncat = new System.Windows.Forms.Button();
             this.buttonDevlopersControlPortal = new System.Windows.Forms.Button();
             this.ButtonUsersInfoControlPortal = new System.Windows.Forms.Button();
             this.buttonTransactionsControlPortal = new System.Windows.Forms.Button();
@@ -42,15 +46,13 @@
             this.buttonOurResponsesControlPortal = new System.Windows.Forms.Button();
             this.buttonProjectBoardControlPortal = new System.Windows.Forms.Button();
             this.buttonDashboardControlPortal = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelTitleControlPortal = new System.Windows.Forms.Panel();
-            this.labelTitleControlPortal = new System.Windows.Forms.Label();
+            this.userControlDashBoard1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlDashBoard();
             this.userControlOurResponses = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlOurResponses();
             this.userControlProjectBoard = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlProjectBoard();
             this.userControlOurProjects = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlOurProjects();
             this.DashboardControlPanel1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlDashboardControlPanel();
             this.UserManageControlPanel1 = new IdeaBid__Project_Request___Management_Platform.UserControlUserManageControlPanel();
-            this.userControlDashBoard1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlDashBoard();
+            this.userControlcategory1 = new IdeaBid__Project_Request___Management_Platform.GUI.UserControlcategory();
             this.tableLayoutPanelControlPortal.SuspendLayout();
             this.panelTopLabelControlPortal.SuspendLayout();
             this.panelDisplayControlPortal.SuspendLayout();
@@ -100,6 +102,7 @@
             // 
             this.panelDisplayControlPortal.BackColor = System.Drawing.Color.Transparent;
             this.panelDisplayControlPortal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelDisplayControlPortal.Controls.Add(this.userControlcategory1);
             this.panelDisplayControlPortal.Controls.Add(this.userControlDashBoard1);
             this.panelDisplayControlPortal.Controls.Add(this.userControlOurResponses);
             this.panelDisplayControlPortal.Controls.Add(this.userControlProjectBoard);
@@ -116,6 +119,7 @@
             // 
             this.panelSlidebarControlPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(99)))), ((int)(((byte)(137)))));
             this.panelSlidebarControlPortal.Controls.Add(this.buttonLogoutControlPortal);
+            this.panelSlidebarControlPortal.Controls.Add(this.buttoncat);
             this.panelSlidebarControlPortal.Controls.Add(this.buttonDevlopersControlPortal);
             this.panelSlidebarControlPortal.Controls.Add(this.ButtonUsersInfoControlPortal);
             this.panelSlidebarControlPortal.Controls.Add(this.buttonTransactionsControlPortal);
@@ -147,6 +151,56 @@
             this.buttonLogoutControlPortal.UseVisualStyleBackColor = false;
             this.buttonLogoutControlPortal.Click += new System.EventHandler(this.buttonLogoutControlPortal_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(305, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(933, 103);
+            this.panel1.TabIndex = 1;
+            // 
+            // panelTitleControlPortal
+            // 
+            this.panelTitleControlPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(99)))), ((int)(((byte)(137)))));
+            this.panelTitleControlPortal.Controls.Add(this.labelTitleControlPortal);
+            this.panelTitleControlPortal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleControlPortal.Location = new System.Drawing.Point(3, 3);
+            this.panelTitleControlPortal.Name = "panelTitleControlPortal";
+            this.panelTitleControlPortal.Size = new System.Drawing.Size(283, 83);
+            this.panelTitleControlPortal.TabIndex = 4;
+            // 
+            // labelTitleControlPortal
+            // 
+            this.labelTitleControlPortal.AutoSize = true;
+            this.labelTitleControlPortal.BackColor = System.Drawing.Color.Transparent;
+            this.labelTitleControlPortal.Font = new System.Drawing.Font("Segoe UI Black", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitleControlPortal.ForeColor = System.Drawing.Color.White;
+            this.labelTitleControlPortal.Location = new System.Drawing.Point(46, 16);
+            this.labelTitleControlPortal.Name = "labelTitleControlPortal";
+            this.labelTitleControlPortal.Size = new System.Drawing.Size(184, 57);
+            this.labelTitleControlPortal.TabIndex = 3;
+            this.labelTitleControlPortal.Text = "IdeaBid";
+            // 
+            // buttoncat
+            // 
+            this.buttoncat.BackColor = System.Drawing.Color.Transparent;
+            this.buttoncat.FlatAppearance.BorderSize = 0;
+            this.buttoncat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.buttoncat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.buttoncat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttoncat.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttoncat.ForeColor = System.Drawing.Color.LightGray;
+            this.buttoncat.Image = ((System.Drawing.Image)(resources.GetObject("buttoncat.Image")));
+            this.buttoncat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttoncat.Location = new System.Drawing.Point(4, 517);
+            this.buttoncat.Name = "buttoncat";
+            this.buttoncat.Size = new System.Drawing.Size(273, 48);
+            this.buttoncat.TabIndex = 9;
+            this.buttoncat.Text = "category ";
+            this.buttoncat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttoncat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttoncat.UseVisualStyleBackColor = false;
+            this.buttoncat.Click += new System.EventHandler(this.buttoncat_Click);
+            // 
             // buttonDevlopersControlPortal
             // 
             this.buttonDevlopersControlPortal.BackColor = System.Drawing.Color.Transparent;
@@ -158,7 +212,7 @@
             this.buttonDevlopersControlPortal.ForeColor = System.Drawing.Color.LightGray;
             this.buttonDevlopersControlPortal.Image = ((System.Drawing.Image)(resources.GetObject("buttonDevlopersControlPortal.Image")));
             this.buttonDevlopersControlPortal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDevlopersControlPortal.Location = new System.Drawing.Point(7, 463);
+            this.buttonDevlopersControlPortal.Location = new System.Drawing.Point(4, 463);
             this.buttonDevlopersControlPortal.Name = "buttonDevlopersControlPortal";
             this.buttonDevlopersControlPortal.Size = new System.Drawing.Size(273, 48);
             this.buttonDevlopersControlPortal.TabIndex = 9;
@@ -294,34 +348,13 @@
             this.buttonDashboardControlPortal.UseVisualStyleBackColor = false;
             this.buttonDashboardControlPortal.Click += new System.EventHandler(this.buttonDashboardControlPortal_Click);
             // 
-            // panel1
+            // userControlDashBoard1
             // 
-            this.panel1.Location = new System.Drawing.Point(305, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 103);
-            this.panel1.TabIndex = 1;
-            // 
-            // panelTitleControlPortal
-            // 
-            this.panelTitleControlPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(99)))), ((int)(((byte)(137)))));
-            this.panelTitleControlPortal.Controls.Add(this.labelTitleControlPortal);
-            this.panelTitleControlPortal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleControlPortal.Location = new System.Drawing.Point(3, 3);
-            this.panelTitleControlPortal.Name = "panelTitleControlPortal";
-            this.panelTitleControlPortal.Size = new System.Drawing.Size(283, 83);
-            this.panelTitleControlPortal.TabIndex = 4;
-            // 
-            // labelTitleControlPortal
-            // 
-            this.labelTitleControlPortal.AutoSize = true;
-            this.labelTitleControlPortal.BackColor = System.Drawing.Color.Transparent;
-            this.labelTitleControlPortal.Font = new System.Drawing.Font("Segoe UI Black", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitleControlPortal.ForeColor = System.Drawing.Color.White;
-            this.labelTitleControlPortal.Location = new System.Drawing.Point(46, 16);
-            this.labelTitleControlPortal.Name = "labelTitleControlPortal";
-            this.labelTitleControlPortal.Size = new System.Drawing.Size(184, 57);
-            this.labelTitleControlPortal.TabIndex = 3;
-            this.labelTitleControlPortal.Text = "IdeaBid";
+            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDashBoard1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDashBoard1.Name = "userControlDashBoard1";
+            this.userControlDashBoard1.Size = new System.Drawing.Size(1475, 674);
+            this.userControlDashBoard1.TabIndex = 5;
             // 
             // userControlOurResponses
             // 
@@ -366,13 +399,13 @@
             this.UserManageControlPanel1.Size = new System.Drawing.Size(1475, 674);
             this.UserManageControlPanel1.TabIndex = 0;
             // 
-            // userControlDashBoard1
+            // userControlcategory1
             // 
-            this.userControlDashBoard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDashBoard1.Location = new System.Drawing.Point(0, 0);
-            this.userControlDashBoard1.Name = "userControlDashBoard1";
-            this.userControlDashBoard1.Size = new System.Drawing.Size(1475, 674);
-            this.userControlDashBoard1.TabIndex = 5;
+            this.userControlcategory1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlcategory1.Location = new System.Drawing.Point(0, 0);
+            this.userControlcategory1.Name = "userControlcategory1";
+            this.userControlcategory1.Size = new System.Drawing.Size(1475, 674);
+            this.userControlcategory1.TabIndex = 6;
             // 
             // FormControlPortal
             // 
@@ -420,5 +453,7 @@
         private UserControlProjectBoard userControlProjectBoard;
         private UserControlOurResponses userControlOurResponses;
         private UserControlDashBoard userControlDashBoard1;
+        private System.Windows.Forms.Button buttoncat;
+        private UserControlcategory userControlcategory1;
     }
 }
