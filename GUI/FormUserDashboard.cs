@@ -144,7 +144,16 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
-         
+            userControlUserDashBoard1.BringToFront();
+            userControlUserDashBoard1.LoadProjectStatesChart(CurrentUserId);
+
+
+
+            // UserControl bring to front
+            // userControlUserDashBoard1.BringToFront();
+
+            // Chart load/update করা হচ্ছে
+            //userControlUserDashBoard1.LoadProjectStatesChart();
         }
 
         private void ButtonProfile_Click(object sender, EventArgs e)

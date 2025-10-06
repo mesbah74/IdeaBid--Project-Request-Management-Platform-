@@ -159,6 +159,12 @@
     <Compile Include="GUI\UserControlPublicProjects.Designer.cs">
       <DependentUpon>UserControlPublicProjects.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UserControlUserDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlUserDashBoard.Designer.cs">
+      <DependentUpon>UserControlUserDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UserControlUserProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlPublicProjects.resx">
       <DependentUpon>UserControlPublicProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlUserDashBoard.resx">
+      <DependentUpon>UserControlUserDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlUserProfile.resx">
       <DependentUpon>UserControlUserProfile.cs</DependentUpon>
