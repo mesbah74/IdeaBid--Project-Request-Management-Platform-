@@ -68,7 +68,7 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
             DataTable dt = DataBase.GetDataTable(sql, pars);
 
-            dgvTable.AutoGenerateColumns = false; // Designer-এ column create করতে হবে
+            dgvTable.AutoGenerateColumns = false; 
             dgvTable.DataSource = dt;
 
             ClearFields();
@@ -167,10 +167,10 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
                 return;
             }
 
-            // INSERT OR UPDATE
+        
             if (selectedDevId == null)
             {
-                // INSERT CODE SAME AS BEFORE
+         
                 string checkSql = @"SELECT COUNT(*) FROM DevInfo WHERE DevUsername=@u OR DevEmail=@e";
                 var parsCheck = DataBase.CreateParameters(("@u", devUsername), ("@e", devEmail));
                 int count = Convert.ToInt32(DataBase.ExecuteScalar(checkSql, parsCheck));
@@ -195,7 +195,7 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
             }
             else
             {
-                // ✅ এখানে নতুন অংশ শুরু
+              
                 if (devUsername == oldDevUsername &&
                     devEmail == oldDevEmail)
                 {
@@ -203,7 +203,7 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
                                     "No Changes Detected", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                // ✅ নতুন অংশ শেষ
+            
 
                 string updateSql = @"UPDATE DevInfo 
                              SET DevUsername=@u, DevFullName=@f, DevEmail=@e, DevPassword=@p, AdminUsername=@a
@@ -256,12 +256,11 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
             if (string.IsNullOrWhiteSpace(searchText))
             {
-                // কিছু না লিখলে সব data দেখাবে
                 LoadDevelopers();
             }
             else
             {
-                // Filter করা data দেখাবে
+               
                 LoadDevelopers(searchText);
             }
         }
