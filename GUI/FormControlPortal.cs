@@ -147,5 +147,12 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
             userControlcategory1.BringToFront();
             userControlcategory1.LoadCategories();
         }
+
+        private void buttonDevlopersControlPortal_Click(object sender, EventArgs e)
+        {
+            userControlDevlopers1.BringToFront();
+
+            userControlDevlopers1.LoadDevelopers();
+        }
     }
 }

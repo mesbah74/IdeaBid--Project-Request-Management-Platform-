@@ -18,6 +18,10 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
     {
         private Panel panelIndicator;
         private Timer invalidWaringLoginLabelTimer;
+        public static string LoggedInAdminUsername { get; private set; }
+
+        //public static string LoggedInAdminUsername;
+
         public FormLogin()
         {
 
@@ -348,6 +352,7 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
 
             //string role = AuthenticateRole(username, password);
             string role = DataBase.AuthenticateRole(username, password);
+            //LoggedInAdminUsername = username;
 
             if (role == null)
             {
@@ -364,6 +369,17 @@ namespace IdeaBid__Project_Request___Management_Platform.GUI
             {
                 SaveCredentials("", "", false);
                 ClearLoginFields();
+            }
+
+
+
+            if (role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+            {
+                LoggedInAdminUsername = username;
+            }
+            else
+            {
+                LoggedInAdminUsername = null;
             }
 
 

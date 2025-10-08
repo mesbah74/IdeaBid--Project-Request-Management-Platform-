@@ -141,6 +141,12 @@
     <Compile Include="GUI\UserControlDashboardControlPanel.Designer.cs">
       <DependentUpon>UserControlDashboardControlPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\UserControlDevlopers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlDevlopers.Designer.cs">
+      <DependentUpon>UserControlDevlopers.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\UserControlOurProjects.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlDashboardControlPanel.resx">
       <DependentUpon>UserControlDashboardControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlDevlopers.resx">
+      <DependentUpon>UserControlDevlopers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\UserControlOurProjects.resx">
       <DependentUpon>UserControlOurProjects.cs</DependentUpon>
